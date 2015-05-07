@@ -12,6 +12,11 @@ when using the **--inplace** option.
 * To compile with DMD, run ```make``` in the dfmt directory. To compile with
   LDC, run ```make ldc``` instead. The generated binary will be placed in ```dfmt/bin/```.
 
+### Using DUB
+* Run `dub fetch dfmt`
+* Run `dub run dfmt -b release --combined -- <dfmt arguments>`
+
+The `-b release --combined` is currently necessary to work around [issue #13](https://github.com/Hackerpilot/dfmt/issues/13)
 
 ## Using
 By default, dfmt reads its input from **stdin** and writes to **stdout**.
